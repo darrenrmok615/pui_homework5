@@ -34,11 +34,6 @@ header {
 
 .nav__links {
     list-style-type: none;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
     font-family: Montserrat;
   	font-size: 14px;
   	font-weight: normal;
@@ -62,7 +57,7 @@ header {
     color: #282828;
 }
 
-.group img {
+header img {
 	width: 20px;
 }
 
@@ -87,8 +82,8 @@ section {
 .button_thing {
     display: flex;
     justify-content: center;
-    width: 125px;
-    height: 125px;
+    width: 175px;
+    height: 175px;
     margin-right: 20px;
     background: rgba(109, 93, 73, 1);
     border-radius: 50%;
@@ -106,9 +101,9 @@ section {
 }
 
 .button_thing p {
-	margin-top: 30%;
+	margin-top: 35%;
 	font-family: Montserrat;
-  	font-size: 12px;
+  	font-size: 14px;
   	font-weight: 500;
   	font-stretch: normal;
   	font-style: normal;
@@ -120,10 +115,22 @@ section {
 
 footer {
 	display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
     align-items: center;
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.footer_front {
+	display: inline-flex;
+}
+
+.facebook {
+	width: 11px;
+}
+
+footer img {
+	width: 20px;
 }
