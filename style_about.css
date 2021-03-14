@@ -23,6 +23,17 @@ p {
   	color: #4b4b4b;
 }
 
+h1 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4b4b4b;
+}
+
 header {
 	  display: flex;
     justify-content: space-between;
@@ -64,14 +75,10 @@ header img {
 section {
 	  min-height: 75%;
     position: relative;
-    padding: 5% 10%;
+    padding: 5% 5%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background-image: url(images/body.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     box-shadow: 0 2px 20px 0 rgba(0,0,0,0.50);
 }
 
@@ -125,11 +132,11 @@ footer {
 }
 
 .footer_front {
-	  display: flex;
+  	display: flex;
 }
 
 .facebook {
-	  width: 11px;
+  	width: 11px;
 }
 
 footer img {

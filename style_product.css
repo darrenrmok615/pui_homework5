@@ -23,6 +23,18 @@ p {
   	color: #4b4b4b;
 }
 
+h2 {
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4b4b4b;
+    margin-top: 10px;
+}
+
 header {
 	  display: flex;
     justify-content: space-between;
@@ -68,28 +80,56 @@ section {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    background-color: rgba(0,0,0,0.50);;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.50);
+}
+
+section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
     background-image: url(images/body.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.50);
+    filter: blur(10px);
+    transform: scale(1.2);
 }
 
-.button__section {
-    display: flex;
-    align-items: center;
+.rectangle {
+  background: #FFFFFF;
+  box-shadow: 0 2px 15px 0 rgba(0,0,0,0.25);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
 }
 
-.button_thing {
-    display: flex;
-    justify-content: center;
-    width: 175px;
-    height: 175px;
-    margin-right: 20px;
-    background: rgba(109, 93, 73, 1);
-    border-radius: 50%;
-    animation: pulse 2s infinite;
+.drop_down {
+    width: 111px;
+    height: 36px;
+    background-color: transparent;
+    border: 1px solid #ecf0f1;
+    border-radius: 5px;
     cursor: pointer;
+    font-family: Montserrat;
+    font-size: 14px;
+    transition: all 0.3s ease 0s;
+}
+
+.drop_down:hover {
+    border: 1px solid #6D5D49;
+    background-color: #6D5D49;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align: center;
 }
 
 @keyframes pulse {
