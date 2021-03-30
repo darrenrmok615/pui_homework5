@@ -60,8 +60,17 @@ header {
     color: #282828;
 }
 
-header img {
-	  width: 20px;
+.header_end li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.cart_icon ion-icon {
+  padding-right: 5px;
+}
+
+.cart_icon a {
+  cursor: pointer;
 }
 
 /* alignment settings for the main section of the page */
@@ -121,7 +130,6 @@ section {
 }
 
 /* footer settings */
-
 footer {
 	  display: flex;
 	  justify-content: space-between;
@@ -132,14 +140,7 @@ footer {
     margin-right: 20px
 }
 
-.footer_front {
-	  display: flex;
-}
-
-.facebook {
-	  width: 11px;
-}
-
-footer img {
-	  width: 20px;
+footer li {
+    display: inline-block;
+    padding: 0 5px;
 }

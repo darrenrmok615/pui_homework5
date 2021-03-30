@@ -68,6 +68,20 @@ header {
     color: #282828;
 }
 
+.header_end li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.cart_icon ion-icon {
+  padding-right: 5px;
+}
+
+.cart_icon a {
+  cursor: pointer;
+}
+
+
 /* button settings */
 input,
 button {
@@ -257,7 +271,7 @@ aside {
   width: 100%;
 }
 
-.summary-delivery-selection {
+.drop-down {
   background-color: #cccccc;
   border: 1px solid #aaaaaa;
   border-radius: 4px;
@@ -265,7 +279,7 @@ aside {
   font-size: 0.625rem;
   height: 34px;
   width: 100%;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
 }
 
 /* footer settings */
@@ -279,15 +293,7 @@ footer {
     margin-right: 20px
 }
 
-.footer_front {
-    display: flex;
-}
-
-.facebook {
-    width: 11px;
-}
-
-footer img {
-    width: 20px;
-    height: 20px;
+footer li {
+    display: inline-block;
+    padding: 0 5px;
 }
