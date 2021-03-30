@@ -138,6 +138,25 @@ section:before {
 }
 
 /* button settings*/
+.add_to_cart {
+    width: 111px;
+    height: 36px;
+    background-color: transparent;
+    border: 1px solid #ecf0f1;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 14px;
+    transition: all 0.3s ease 0s;
+}
+
+.add_to_cart:hover {
+    border: 1px solid #6D5D49;
+    background-color: #6D5D49;
+    color: #ffffff;
+}
+
+/* button settings*/
 .button2 {
     width: 111px;
     height: 36px;

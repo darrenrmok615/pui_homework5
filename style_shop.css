@@ -86,6 +86,11 @@ section {
     box-shadow: 0 2px 20px 0 rgba(0,0,0,0.50);
 }
 
+.product_section img {
+  position: relative;
+  overflow: hidden;
+}
+
 /* drop down button settings */
 .drop_down {
     width: 111px;
