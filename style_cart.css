@@ -1,14 +1,7 @@
 /* basic alignment settings */
 body {
     height: 100%;
-    font-family: 'Montserrat';
-    font-size: 62.5%;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #4b4b4b;
+    font-family: Montserrat;
 }
 
 html {
@@ -28,6 +21,12 @@ strong {
 
 p {
   margin: 0.75rem 0 0;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4b4b4b;
 }
 
 h1 {
@@ -79,10 +78,11 @@ button {
 button {
   background-color: #666;
   color: #fff;
+  border-radius: 5px;
 }
 
 button:hover {
-  background-color: #555;
+  background-color: #6D5D49;
 }
 
 input,
@@ -105,13 +105,13 @@ img,
   width: 100%;
 }
 
-main {
-  clear: both;
+section {
+  min-height: 75%;
+  padding: 5% 5% 5% 5%;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.50);
   font-size: 0.75rem;
   margin: 0 auto;
   overflow: hidden;
-  padding: 1rem 0;
-  width: 960px;
 }
 
 /* cart settings */
@@ -217,6 +217,7 @@ aside {
   border: 1px solid #aaaaaa;
   padding: 1rem;
   position: fixed;
+  border-radius: 5px;
   width: 250px;
 }
 
@@ -264,5 +265,29 @@ aside {
   font-size: 0.625rem;
   height: 34px;
   width: 100%;
-  font: 'Montserrat';
+  font-family: Montserrat;
+}
+
+/* footer settings */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.footer_front {
+    display: flex;
+}
+
+.facebook {
+    width: 11px;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
 }

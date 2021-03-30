@@ -127,16 +127,35 @@ section:before {
     transition: all 0.3s ease 0s;
 }
 
-.drop_down:hover {
+/* button settings*/
+.button2 {
+    width: 111px;
+    height: 36px;
+    background-color: transparent;
+    border: 1px solid #ecf0f1;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 14px;
+    transition: all 0.3s ease 0s;
+}
+
+.button2:hover {
     border: 1px solid #6D5D49;
     background-color: #6D5D49;
 }
 
 .buttons {
-  display: flex;
+  display: flex-start;
   justify-content: space-around;
   padding: 10px;
-  align: center;
+}
+
+.buttons2{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  margin: 0 10px;
 }
 
 /* footer settings */

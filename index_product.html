@@ -17,7 +17,7 @@
             </nav>
             <div class="header_end">
 				<img class="search" src="images/search.png" alt="search icon">
-				<img class="cart" src="images/cart.png" alt="cart icon">
+				<a href="index_cart.html"><img class="cart" src="images/cart.png" alt="cart icon"></a>
 				<img class="profile" src="images/profile1.png" alt="profile picture">
 			</div>
 		</header>
@@ -29,17 +29,29 @@
 		    		<p>Flavor: Original</p>
 		    		<img class="roll" src="images/roll.png" alt="picture of cinnamon roll product">
 		    		<div class="buttons">
-		    			<a href="#"><button class="drop_down">Glaze:<img class="arrow" src="images/arrow_down.png" alt="down arrow icon"></button></a>
-		    			<a href="#"><button class="drop_down">Roll(s):<img class="arrow" src="images/arrow_down.png" alt="down arrow icon"></button></a>
-		    			<a href="#"><button class="drop_down">Add to Cart</button></a>
+		    			<select class="drop_down" id="glaze">
+              				<option value="0">Glaze:</option>
+             				<option value="Original">Original</option>
+             				<option value="Blackberry">Blackberry</option>
+             				<option value="Walnut">Walnut</option>
+             				<option value="Original (Gluten-Free)">Original (Gluten-Free)</option>
+             				<option value="Pumpkin Spice">Pumpkin Spice</option>
+             				<option value="Caramel Pecan">Caramel Pecan</option>
+          				</select>
+		    			<select class="drop_down" id="roll(s)">
+              				<option value="0">Roll(s):</option>
+             				<option value="1">1</option>
+             				<option value="3">3</option>
+             				<option value="6">6</option>
+             				<option value="12">12</option>
+          				</select>
+		    			<button class="button2">Add to Cart</button></a>
 	    			</div>
             	</div>
             	<div class="right">
             		<p>Product Description <br> <br> Our signature original cinnamon bun! Delivered to your door within the hour, guarenteed fresh and warm! We promise you won't be able to stop eating them!</p>
-            		<div class="buttons">
-            			<a href="#"><h2>Refund Policy</h2></a>
-            			<a href="#"><h2>Terms and Conditions</h2></a>
-            			<a href="#"><button class="drop_down">Checkout</button></a>
+            		<div class="buttons2">
+            			<a href="index_cart.html"><button class="button2">Checkout</button></a>
             		</div>
             	</div>			
         	</div>
