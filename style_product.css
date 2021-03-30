@@ -1,3 +1,4 @@
+/* basic alignment settings */
 body {
     height: 100%;
 }
@@ -12,6 +13,7 @@ html {
     padding: 0;
 }
 
+/* font settings */
 p {
   	font-family: Montserrat;
   	font-size: 14px;
@@ -35,6 +37,7 @@ h2 {
     margin-top: 10px;
 }
 
+/* header settings */
 header {
 	  display: flex;
     justify-content: space-between;
@@ -73,6 +76,7 @@ header img {
 	  width: 20px;
 }
 
+/* main section settings */
 section {
 	  min-height: 75%;
     position: relative;
@@ -84,6 +88,7 @@ section {
     box-shadow: 0 2px 20px 0 rgba(0,0,0,0.50);
 }
 
+/* background image settings */
 section:before {
     content: "";
     position: absolute;
@@ -100,6 +105,7 @@ section:before {
     transform: scale(1.2);
 }
 
+/* pop-up window settings */
 .rectangle {
   background: #FFFFFF;
   box-shadow: 0 2px 15px 0 rgba(0,0,0,0.25);
@@ -108,6 +114,7 @@ section:before {
   grid-template-columns: repeat(2, 50%);
 }
 
+/* drop down button settings */
 .drop_down {
     width: 111px;
     height: 36px;
@@ -132,28 +139,7 @@ section:before {
   align: center;
 }
 
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0px rgba(109, 93, 73, 0.7);
-    }
-    100% {
-        box-shadow: 0 0 0 15px rgba(109, 93, 73, 0);
-    }
-}
-
-.button_thing p {
-	  margin-top: 35%;
-	  font-family: Montserrat;
-  	font-size: 14px;
-  	font-weight: 500;
-  	font-stretch: normal;
-  	font-style: normal;
-  	line-height: normal;
-  	letter-spacing: normal;
-  	text-align: center;
-  	color: #ffffff;
-}
-
+/* footer settings */
 footer {
 	  display: flex;
 	  justify-content: space-between;
