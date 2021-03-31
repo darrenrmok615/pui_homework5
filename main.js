@@ -122,33 +122,36 @@ function setDetail(product) {
 
 function loadDetail() {
 	let detailName = localStorage.getItem("itemName");
-	let detailPrice = localStorage.getItem("itemPrice");
-	let detailDescription = localStorage.getItem("itemDescription");
-	let detailImage = localStorage.getItem("itemImage");
 
-	document.querySelector('.left span').textContent = "Flavor: " + detailName;
-	document.querySelector('.right span').textContent = detailDescription;
-	document.querySelector('.price span').textContent = detailPrice;
+	if (detailName != null) {
+		let detailPrice = localStorage.getItem("itemPrice");
+		let detailDescription = localStorage.getItem("itemDescription");
+		let detailImage = localStorage.getItem("itemImage");
 
-	let product_image = document.querySelector('.roll_image');
-	if (detailName == "Orginal") {
-		product_image.innerHTML = '<img class="roll" src="images/roll.png" alt="picture of original cinnamon roll product" id="blackberry">';
-	}
-	else if (detailName == "Blackberry") {
-		product_image.innerHTML = '<img class="roll" src="images/roll2.png" alt="picture of blackberry cinnamon roll product" id="blackberry">';
-	}
-	else if (detailName == "Walnut") {
-		product_image.innerHTML = '<img class="roll" src="images/roll3.png" alt="picture of walnut cinnamon roll product" id="blackberry">';
-	}
-	else if (detailName == "Original Gluten-Free") {
-		product_image.innerHTML = '<img class="roll" src="images/roll4.png" alt="picture of original (gluten-free) cinnamon roll product" id="blackberry">';
-	}
-	else if (detailName == "Pumpkin Spice") {
-		product_image.innerHTML = '<img class="roll" src="images/roll5.png" alt="picture of pumpkin spice cinnamon roll product" id="blackberry">';
-	}
-	else if (detailName == "Caramel Pecan") {
-		product_image.innerHTML = '<img class="roll" src="images/roll6.png" alt="picture of carmel pecan cinnamon roll product" id="blackberry">';
+		document.querySelector('.left span').textContent = "Flavor: " + detailName;
+		document.querySelector('.right span').textContent = detailDescription;
+		document.querySelector('.price span').textContent = detailPrice;
 
+		let product_image = document.querySelector('.roll_image');
+		if (detailName == "Orginal") {
+			product_image.innerHTML = '<img class="roll" src="images/roll.png" alt="picture of original cinnamon roll product" id="blackberry">';
+		}
+		else if (detailName == "Blackberry") {
+			product_image.innerHTML = '<img class="roll" src="images/roll2.png" alt="picture of blackberry cinnamon roll product" id="blackberry">';
+		}
+		else if (detailName == "Walnut") {
+			product_image.innerHTML = '<img class="roll" src="images/roll3.png" alt="picture of walnut cinnamon roll product" id="blackberry">';
+		}
+		else if (detailName == "Original Gluten-Free") {
+			product_image.innerHTML = '<img class="roll" src="images/roll4.png" alt="picture of original (gluten-free) cinnamon roll product" id="blackberry">';
+		}
+		else if (detailName == "Pumpkin Spice") {
+			product_image.innerHTML = '<img class="roll" src="images/roll5.png" alt="picture of pumpkin spice cinnamon roll product" id="blackberry">';
+		}
+		else if (detailName == "Caramel Pecan") {
+			product_image.innerHTML = '<img class="roll" src="images/roll6.png" alt="picture of carmel pecan cinnamon roll product" id="blackberry">';
+
+		}
 	}
 }
 
