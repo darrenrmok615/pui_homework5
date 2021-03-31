@@ -97,8 +97,8 @@ section {
 .button_thing {
     display: flex;
     justify-content: center;
-    width: 175px;
-    height: 175px;
+    width: 150px;
+    height: 150px;
     margin-right: 20px;
     background: rgba(109, 93, 73, 1);
     border-radius: 50%;
